@@ -1,0 +1,63 @@
+
+
+<div class="card-container">
+  <form (ngSubmit)="registerUser()" class="card bg-dark text-light">
+    <h1 class="heading">Register</h1>
+
+<div class=" col-6 mx-auto align-items-center">
+  <div class="col-auto">
+    <label for="inputUsername" class="col-form-label">UserName</label>
+  </div>
+  <div class="col-auto">
+    
+    <input 
+    [(ngModel)]="username"
+    placeholder="Enter Your Username "
+    type="text"  
+    name="userName" 
+    class="form-control"  
+    >
+    
+  </div>
+  
+  
+</div>
+
+<div class=" col-6 mx-auto  align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Password</label>
+  </div>
+  <div class="col-auto">
+    
+    <input 
+    [(ngModel)]="password"
+    placeholder="Enter Your Password "
+    type="password"
+    name="password" 
+    class="form-control" 
+    >
+    
+  </div>
+  <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text-light">
+      <p>
+
+        Must be 8-20 characters long.
+      </p>
+    </span>
+  </div>
+</div>
+<br>
+<div class=" col-6 mx-auto row g-3">
+  
+  <button class="btn btn-primary" type="submit">Register</button>
+  <div class="lost">
+
+    <p>Already have an Account?
+  
+      <a href="/login">Login</a>
+    </p>
+  </div>
+</div>
+</form>
+</div> 
